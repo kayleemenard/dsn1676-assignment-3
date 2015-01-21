@@ -7,6 +7,8 @@
 html {
   box-sizing: border-box;
 
+  background-color: black;
+
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -15,4 +17,25 @@ html {
 
 *, *::before, *::after; {
 	box-sizing: inherit;
+}
+
+.asteroid {
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	left: 100px;
+	top: 100px;
+
+	animation: asteroid-rotate 10s ease-in-out infinite alternate;
+}
+
+@keyframes asteroid-rotate {
+
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
