@@ -7,8 +7,6 @@
 html {
   box-sizing: border-box;
 
-  background-color: black;
-
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -17,6 +15,10 @@ html {
 
 *, *::before, *::after; {
 	box-sizing: inherit;
+}
+
+body {
+	background-color: black;
 }
 
 .asteroid {
@@ -30,12 +32,34 @@ html {
 }
 
 @keyframes asteroid-rotate {
-
 	0% {
 		transform: rotate(0deg);
 	}
 
 	100% {
 		transform: rotate(360deg);
+	}
+}
+
+.ship {
+	height: 100px;
+	width: 100px;
+}
+
+.stars {
+	background-image: url(../images/stars.svg);
+	height: 100vh; /* "vh" stands for viewport height, it makes the image as tall as the screen */
+
+
+	animation: zoom 10s infinite alternate;
+}
+
+@keyframes zoom {
+	0% {
+		transform: scale(1,1);
+	}
+
+	100% {
+		transform: scale(1.2, 1.2);
 	}
 }
