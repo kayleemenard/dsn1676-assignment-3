@@ -34,19 +34,19 @@ body {
 
 @-webkit-keyframes asteroid-rotate {
 	0% {
-		transform: translate(0px) rotate(0deg);
+		-webkit-transform: translate(0px) rotate(0deg);
 	}
 
 	33% {
-		transform: translate(5px, 5px);
+		-webkit-transform: translate(5px, 5px);
 	}
 
 	66% {
-		transform: translate(-5px,-5px);
+		-webkit-transform: translate(-5px,-5px);
 	}
 
 	100% {
-		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
 	}
 }
 
@@ -63,27 +63,27 @@ body {
 
 @-webkit-keyframes hover {
 	0% {
-		transform: translate(0px) rotate(0deg);
+		-webkit-transform: translate(0px) rotate(0deg);
 	}
 
 	25% {
-		transform: translateX(6px) rotate(-5deg);
+		-webkit-transform: translateX(6px) rotate(-5deg);
 	}
 
 	50% {
-		transform: translate(75px, 10px) rotate(5deg);
+		-webkit-transform: translate(75px, 10px) rotate(5deg);
 	}
 
 	75% {
-		transform: translateX(6px) rotate(10deg);
+		-webkit-transform: translateX(6px) rotate(10deg);
 	}
 
 	85% {
-		transform: rotate(-15deg);
+		-webkit-transform: rotate(-15deg);
 	}
 
 	100% {
-		transform: translate(0px, 0px);
+		-webkit-transform: translate(0px, 0px);
 	}
 }
 
@@ -104,10 +104,10 @@ body {
 
 @-webkit-keyframes zoom {
 	0% {
-		transform: scale(1,1);
+		-webkit-transform: scale(1,1);
 	}
 
 	100% {
-		transform: scale(1.1, 1.1);
+		-webkit-transform: scale(1.1, 1.1);
 	}
 }
