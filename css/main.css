@@ -33,28 +33,20 @@ body {
 }
 
 @-webkit-keyframes asteroid-rotate {
-	0% {
-		-webkit-transform: translate(0px) rotate(0deg);
-	}
+	0% {-webkit-transform: translate(0px) rotate(0deg);}
 
-	33% {
-		-webkit-transform: translate(5px, 5px);
-	}
+	33% {-webkit-transform: translate(5px, 5px);}
 
-	66% {
-		-webkit-transform: translate(-5px,-5px);
-	}
+	66% {-webkit-transform: translate(-5px,-5px);}
 
-	100% {
-		-webkit-transform: rotate(360deg);
-	}
+	100% {-webkit-transform: rotate(360deg);}
 }
 
 .ship {
 	height: 150px;
 	width: 150px;
 	position: absolute;
-	right: 250px;
+	right: 225px;
 	bottom: 200px;
 
 	-webkit-animation: hover 6s forwards infinite;
@@ -62,37 +54,18 @@ body {
 }
 
 @-webkit-keyframes hover {
-	0% {
-		-webkit-transform: translate(0px) rotate(0deg);
-	}
+	0% {-webkit-transform: translate(0px) rotate(0deg);}
 
-	25% {
-		-webkit-transform: translateX(6px) rotate(-5deg);
-	}
+	25% {-webkit-transform: translateX(6px) rotate(-5deg);}
 
-	50% {
-		-webkit-transform: translate(75px, 10px) rotate(5deg);
-	}
+	50% {-webkit-transform: translate(10px, 75px) rotate(5deg);}
 
-	75% {
-		-webkit-transform: translateX(6px) rotate(10deg);
-	}
+	75% {-webkit-transform: translateX(6px) rotate(0deg);}
 
-	85% {
-		-webkit-transform: rotate(-15deg);
-	}
+	85% {-webkit-transform: rotate(5deg);}
 
-	100% {
-		-webkit-transform: translate(0px, 0px);
-	}
+	100% {-webkit-transform: translate(0px, 0px);}
 }
-
-.missile {
-	height: 5px;
-	width: 10px;
-	position: absol;
-}
-
 
 .stars {
 	background-image: url(../images/stars.svg);
@@ -103,11 +76,7 @@ body {
 }
 
 @-webkit-keyframes zoom {
-	0% {
-		-webkit-transform: scale(1,1);
-	}
+	0% {-webkit-transform: scale(1,1);}
 
-	100% {
-		-webkit-transform: scale(1.1, 1.1);
-	}
+	100% {-webkit-transform: scale(1.1, 1.1);}
 }
